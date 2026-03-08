@@ -1,2 +1,2 @@
-clean floor
-make bed
+clean bedroommake bed
+do the dishes
