@@ -7,7 +7,8 @@ add_button = gui.Button("Add")
 edit_button = gui.Button("Edit")
 list_box = gui.Listbox(values=functions.get_todos(), key="todos", enable_events=True, size=(40, 10))
 
-window = gui.Window('To-Do app', layout=[[label], [input_box, add_button], [list_box, edit_button]],
+layout = [[label], [input_box, add_button], [list_box, edit_button]]
+window = gui.Window('To-Do app', layout=layout,
                     font=("Helvetica", 20))
 
 while True:
