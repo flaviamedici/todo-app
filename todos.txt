@@ -1,4 +1,4 @@
-clean bedroommake bed
-do the dishesclean bedroommake bed
-
-clean floor
+Clean floor
+Wash car
+Buy groceries
+Wash car tomorrow
