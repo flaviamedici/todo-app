@@ -6,10 +6,12 @@ gui.theme('DarkBlue')
 clock = gui.Text('', key='clock')
 label = gui.Text("Type a todo: ")
 input_box = gui.InputText(tooltip="Enter todo", key="todo")
-add_button = gui.Button("Add", size=10)
+add_button = gui.Button(size=10, image_source="add.png", mouseover_colors="LightBlue2",
+                        tooltip="Add todo", key="Add")
 edit_button = gui.Button("Edit")
 list_box = gui.Listbox(values=functions.get_todos(), key="todos", enable_events=True, size=(40, 12))
-complete_button = gui.Button("Complete")
+complete_button = gui.Button(size=10, image_source="complete.png", mouseover_colors="LightBlue2",
+                        tooltip="Complete todo", key="Complete")
 exit_button = gui.Button("Exit")
 
 
