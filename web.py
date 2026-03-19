@@ -3,6 +3,8 @@ import functions
 
 todos = functions.get_todos()
 
+st.set_page_config(layout="wide")
+
 def add_todo():
     todo = st.session_state['new_todo'] + '\n'
     todos.append(todo)
@@ -11,7 +13,7 @@ def add_todo():
 
 st.title('My Todo app')
 st.subheader('This is my todo app')
-st.write('<h2>This app is to increase your <b>productivity</b></h2>',
+st.write('<h4>This app is to increase your <b>productivity</b></h4>',
          unsafe_allow_html=True)
 
 st.text_input(label="",placeholder='Type a new todo',
