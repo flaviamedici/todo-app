@@ -11,7 +11,8 @@ def add_todo():
 
 st.title('My Todo app')
 st.subheader('This is my todo app')
-st.write('This app is to increase your productivity')
+st.write('<h2>This app is to increase your <b>productivity</b></h2>',
+         unsafe_allow_html=True)
 
 st.text_input(label="",placeholder='Type a new todo',
               on_change=add_todo, key='new_todo')
